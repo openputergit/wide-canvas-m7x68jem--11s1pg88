@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumthi Stores - Your Family Textile Destination Since 1976</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #e5f0f5;
+            background-image: radial-gradient(#94a3b8 0.5px, transparent 0.5px);
+            background-size: 10px 10px;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-slate-800 playfair">Sumthi Stores</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-slate-700 hover:text-slate-900">Home</a>
+                    <a href="#collections" class="text-slate-700 hover:text-slate-900">Collections</a>
+                    <a href="#about" class="text-slate-700 hover:text-slate-900">About</a>
+                    <a href="#contact" class="text-slate-700 hover:text-slate-900">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-700">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <a href="#home" class="block py-2 text-slate-700">Home</a>
+            <a href="#collections" class="block py-2 text-slate-700">Collections</a>
+            <a href="#about" class="block py-2 text-slate-700">About</a>
+            <a href="#contact" class="block py-2 text-slate-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-bold text-slate-800 playfair mb-4">Your Family's Fashion Destination</h2>
+                <p class="text-lg text-slate-600 mb-8">Serving generations since 1976 with quality textiles</p>
+                <a href="#collections" class="bg-slate-800 text-white px-8 py-3 rounded-full hover:bg-slate-700 transition-colors">Explore Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 playfair">Our Collections</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378" alt="Men's Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Men's Wear</h3>
+                        <p class="text-slate-600">Classic and contemporary styles for the modern gentleman</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5" alt="Women's Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Women's Wear</h3>
+                        <p class="text-slate-600">Elegant designs for every occasion</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1519413792093-75b910030aa0" alt="Kids Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kids' Wear</h3>
+                        <p class="text-slate-600">Comfortable and colorful options for little ones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 playfair">Our Legacy Since 1976</h2>
+                    <p class="text-slate-600 mb-4">For over four decades, Sumthi Stores has been the trusted name in textile retail, serving families with the finest quality fabrics and garments.</p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="text-center p-4 bg-white rounded-lg shadow">
+                            <i class="bi bi-award text-3xl text-slate-800"></i>
+                            <h4 class="font-semibold mt-2">Best Quality</h4>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow">
+                            <i class="bi bi-tag text-3xl text-slate-800"></i>
+                            <h4 class="font-semibold mt-2">Best Pricing</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8" alt="Store Interior" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 playfair">Visit Us Today</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-slate-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <p><i class="bi bi-geo-alt mr-2"></i> 123 Fashion Street, Textile Hub</p>
+                        <p><i class="bi bi-telephone mr-2"></i> +1 234 567 8900</p>
+                        <p><i class="bi bi-envelope mr-2"></i> info@sumthistores.com</p>
+                        <p><i class="bi bi-clock mr-2"></i> Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">Name</label>
+                        <input type="text" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-slate-500 focus:ring-slate-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">Email</label>
+                        <input type="email" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-slate-500 focus:ring-slate-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">Message</label>
+                        <textarea rows="4" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-slate-500 focus:ring-slate-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-slate-800 text-white px-6 py-2 rounded-md hover:bg-slate-700 transition-colors">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 playfair">Sumthi Stores</h3>
+                    <p class="text-slate-300">Your one-stop destination for family fashion since 1976.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-slate-300 hover:text-white">Home</a></li>
+                        <li><a href="#collections" class="text-slate-300 hover:text-white">Collections</a></li>
+                        <li><a href="#about" class="text-slate-300 hover:text-white">About</a></li>
+                        <li><a href="#contact" class="text-slate-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-300 hover:text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-white"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-700 text-center">
+                <p class="text-slate-300">&copy; 2024 Sumthi Stores. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission handling
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
